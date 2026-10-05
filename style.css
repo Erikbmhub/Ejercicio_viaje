@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color:grey;
+}
+h1 {
+    color: white;
+    text-align: center;
+}
+section {
+    width: 100%;
+    text-align: center;
+}
+select {
+    width: 30%;
+}
+footer {
+    text-align: center;
+}
+.banner {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.banner h1 {
+    color: black;
+    text-align: left;
+}
+
+.banner img {
+    width: 100%;
+}
+
+
+
+section img {
+    width: 50%;
+}
+/* NO CONSIGO QUE LO HAGA BIEN MODO ORDENA
+@media (min-width: 768px) {
+
+   main {
+        display: flex;
+        justify-content: space-between;
+    }  
+    
+    section {
+        display: flex;
+        justify-content: space-between;
+        width: 30%;
+    }
+
+    section img {
+        width: 100%;
+    }
+}
