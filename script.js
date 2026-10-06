@@ -1,17 +1,17 @@
 const data = [
   {
     title: "Example Title 1",
-    description: "Example Description 1",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quis labore harum beatae suscipit voluptates sapiente, natus voluptatem eaque repellat exercitationem. Laudantium nemo dicta cum harum, modi veniam. Repellat, asperiores?",
     url_img: "../viajes/viajes-1.jpg",
   },
   {
     title: "Example Title 2",
-    description: "Example Description 2",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quis labore harum beatae suscipit voluptates sapiente, natus voluptatem eaque repellat exercitationem. Laudantium nemo dicta cum harum, modi veniam. Repellat, asperiores?",
     url_img: "../viajes/viajes-2.jpg",
   },
   {
     title: "Example Title 3",
-    description: "Example Description 3",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quis labore harum beatae suscipit voluptates sapiente, natus voluptatem eaque repellat exercitationem. Laudantium nemo dicta cum harum, modi veniam. Repellat, asperiores?",
     url_img: "../viajes/viajes-3.jpg",
   },
 ];
@@ -33,28 +33,34 @@ for(let i =0; i<data.length; i++){
 
 const main = document.querySelector("main");
 
-  let section = document.createElement("section");
+/*let section = document.createElement("section");//Creo el section con id para poder separarlo en css
+section.id="viajes";
+let recomendaciones= document.createTextNode("Recomendaciones");
+const titulo=document.createElement("h2");
+document.querySelector("h2").appendChild(Recomendaciones)*/
+let section = document.createElement("section");
+section.id = "viajes";
+document.querySelector("main").appendChild(section);
 for (let i = 0; i < data.length; i++) {
-  
+  //creo article
   let article = document.createElement("article")
-
-
+  //Crea imagen
   let img = document.createElement("img");
   img.src = data[i].url_img;
-
+  //Crea titulo
   let title = document.createElement("h2");
   title.appendChild(document.createTextNode(data[i].title));
-
+  //Crea description
   let description = document.createElement("p");
   description.appendChild(document.createTextNode(data[i].description));
-
+  //Meto imagen,titulo y desc dentro del article
   article.appendChild(img);
   article.appendChild(title);
   article.appendChild(description);
+  //<eto article en section
   section.appendChild(article);
-
-  main.appendChild(section);
 }
+ main.appendChild(section);
 const cities = [
   "Madrid",
   "Barcelona",

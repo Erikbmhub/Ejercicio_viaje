@@ -1,19 +1,29 @@
 
 
 header{
+    width: 100%;
     background-color:grey;
 }
 h1 {
     color: white;
     text-align: center;
 }
+h2 {
+    margin-left:5%;
+}
 section {
     width: 100%;
     text-align: center;
 }
+article {
+    border: 1px solid;
+    border-radius: 8px;
+    justify-content: space-between;
+    margin:20px
+}
 select {
     width: 30%;
-}
+}  
 footer {
     text-align: center;
 }
@@ -31,26 +41,20 @@ footer {
     width: 100%;
 }
 
-
-
 section img {
-    width: 50%;
+    width: 100%;
 }
-/* NO CONSIGO QUE LO HAGA BIEN MODO ORDENA
-@media (min-width: 768px) {
 
-   main {
+@media (min-width: 768px){
+.banner {
+    width: 80%;
+    margin: 0 auto;
+}
+#viajes {
         display: flex;
-        justify-content: space-between;
-    }  
-    
-    section {
-        display: flex;
-        justify-content: space-between;
-        width: 30%;
-    }
-
-    section img {
         width: 100%;
+        margin: 50px;
+        justify-content: space-around; 
     }
 }
+
