@@ -30,10 +30,14 @@ for(let i =0; i<data.length; i++){
     main.appendChild(section);
 } */
 //CAMBIO EL ORDEN IMG/TITULO/DESCRIP EN LA OTRA NO HABIA FORMA DE MOVERLO
+
 const main = document.querySelector("main");
 
-for (let i = 0; i < data.length; i++) {
   let section = document.createElement("section");
+for (let i = 0; i < data.length; i++) {
+  
+  let article = document.createElement("article")
+
 
   let img = document.createElement("img");
   img.src = data[i].url_img;
@@ -44,9 +48,10 @@ for (let i = 0; i < data.length; i++) {
   let description = document.createElement("p");
   description.appendChild(document.createTextNode(data[i].description));
 
-  section.appendChild(img);
-  section.appendChild(title);
-  section.appendChild(description);
+  article.appendChild(img);
+  article.appendChild(title);
+  article.appendChild(description);
+  section.appendChild(article);
 
   main.appendChild(section);
 }
@@ -61,7 +66,7 @@ const cities = [
   "Palma de Mallorca",
   "Alicante",
   "Zaragoza",
-];
+]; 
 
 /*MI OPCION, PERO ME PASABA LO MISMO QUE EN DATA, NO PODIA SELECIONAR LOS ELEMENTOS
 const article = document.createElement("article")
