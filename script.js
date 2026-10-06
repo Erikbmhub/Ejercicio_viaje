@@ -85,6 +85,7 @@ for (let i =0; i<cities.length; i++){
     main.appendChild(article)
 } */
 let select = document.createElement("select");
+select.id="destinos"
 for (let i = 0; i < cities.length; i++) {
   let option = document.createElement("option");
   option.appendChild(document.createTextNode(cities[i]));
