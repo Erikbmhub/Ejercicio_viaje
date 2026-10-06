@@ -2,17 +2,17 @@ const data = [
   {
     title: "Example Title 1",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quis labore harum beatae suscipit voluptates sapiente, natus voluptatem eaque repellat exercitationem. Laudantium nemo dicta cum harum, modi veniam. Repellat, asperiores?",
-    url_img: "../viajes/viajes-1.jpg",
+    url_img: "./viajes/viajes-1.jpg",
   },
   {
     title: "Example Title 2",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quis labore harum beatae suscipit voluptates sapiente, natus voluptatem eaque repellat exercitationem. Laudantium nemo dicta cum harum, modi veniam. Repellat, asperiores?",
-    url_img: "../viajes/viajes-2.jpg",
+    url_img: "./viajes/viajes-2.jpg",
   },
   {
     title: "Example Title 3",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quis labore harum beatae suscipit voluptates sapiente, natus voluptatem eaque repellat exercitationem. Laudantium nemo dicta cum harum, modi veniam. Repellat, asperiores?",
-    url_img: "../viajes/viajes-3.jpg",
+    url_img: "./viajes/viajes-3.jpg",
   },
 ];
 
